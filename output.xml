@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.9.9 on darwin)" generated="20220209 16:51:11.523" rpa="false" schemaversion="2">
+<suite id="s1" name="Web" source="/Users/chris/apps2/robot_test/web.robot">
+<test id="s1-t1" name="Check Window">
+<kw name="Setup" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220209 16:51:12.400" level="INFO">Opening browser 'Chrome' to base url 'https://applitools.github.io/demo/TestPages/FramesTestPage/'.</msg>
+<status status="PASS" starttime="20220209 16:51:12.400" endtime="20220209 16:51:14.743"/>
+</kw>
+<status status="PASS" starttime="20220209 16:51:12.399" endtime="20220209 16:51:14.744"/>
+</kw>
+<kw name="Eyes Open" library="EyesLibrary">
+<tag>Check flow</tag>
+<doc>Shared parameters section from `applitools.yaml` could be overwritten during `Eyes Open` call, see `Preconditions`.</doc>
+<status status="PASS" starttime="20220209 16:51:14.744" endtime="20220209 16:51:15.283"/>
+</kw>
+<kw name="Eyes Check Window" library="EyesLibrary">
+<arg>Ignore Region By Coordinates</arg>
+<arg>[12 22 2 2]</arg>
+<tag>Allow to pass Check Settings keywords</tag>
+<tag>Check flow</tag>
+<doc>Check current browser window</doc>
+<kw name="Ignore Region By Coordinates" library="EyesLibrary">
+<arg>[12 22 2 2]</arg>
+<arg>SeleniumCheckSettings(values=SeleniumCheckSettingsValues(target_region=None, timeout=-1, ignore_caret=None, stitch_content=None, match_level=None, name=None, send_dom=None, use_dom=None, enable_patterns=None, ignore_displacements=None, ignore_regions=[], layout_regions=[], strict_regions=[], content_regions=[], floating_regions=[], accessibility_regions=[], variation_group_id=None, scroll_root_element=None, scroll_root_selector=None, target_selector=None, target_element=None, frame_chain=[], script_hooks={}, visual_grid_options=(), disable_browser_fetching=None, ocr_region=None, layout_breakpoints=None, lazy_load=None), _region=None, _frame=None)</arg>
+<tag>Check Settings keyword</tag>
+<doc>Returns a CheckSettings object that ignores the region specified in the argument.</doc>
+<status status="PASS" starttime="20220209 16:51:15.284" endtime="20220209 16:51:15.285"/>
+</kw>
+<status status="PASS" starttime="20220209 16:51:15.284" endtime="20220209 16:51:15.725"/>
+</kw>
+<kw name="Eyes Close Async" library="EyesLibrary">
+<tag>Check flow</tag>
+<doc>Closes a session and returns the results of the session.
+If a test is running, aborts it. Otherwise, does nothing.</doc>
+<status status="PASS" starttime="20220209 16:51:15.725" endtime="20220209 16:51:15.725"/>
+</kw>
+<kw name="Teardown" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220209 16:51:15.726" endtime="20220209 16:51:15.796"/>
+</kw>
+<status status="PASS" starttime="20220209 16:51:15.726" endtime="20220209 16:51:15.796"/>
+</kw>
+<status status="PASS" starttime="20220209 16:51:12.398" endtime="20220209 16:51:15.796"/>
+</test>
+<test id="s1-t2" name="Check Window Fully">
+<kw name="Setup" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220209 16:51:15.798" level="INFO">Opening browser 'Chrome' to base url 'https://applitools.github.io/demo/TestPages/FramesTestPage/'.</msg>
+<status status="PASS" starttime="20220209 16:51:15.798" endtime="20220209 16:51:18.102"/>
+</kw>
+<status status="PASS" starttime="20220209 16:51:15.798" endtime="20220209 16:51:18.102"/>
+</kw>
+<kw name="Eyes Open" library="EyesLibrary">
+<tag>Check flow</tag>
+<doc>Shared parameters section from `applitools.yaml` could be overwritten during `Eyes Open` call, see `Preconditions`.</doc>
+<status status="PASS" starttime="20220209 16:51:18.102" endtime="20220209 16:51:18.597"/>
+</kw>
+<kw name="Eyes Check Window" library="EyesLibrary">
+<arg>Fully</arg>
+<tag>Allow to pass Check Settings keywords</tag>
+<tag>Check flow</tag>
+<doc>Check current browser window</doc>
+<kw name="Fully" library="EyesLibrary">
+<arg>SeleniumCheckSettings(values=SeleniumCheckSettingsValues(target_region=None, timeout=-1, ignore_caret=None, stitch_content=None, match_level=None, name=None, send_dom=None, use_dom=None, enable_patterns=None, ignore_displacements=None, ignore_regions=[], layout_regions=[], strict_regions=[], content_regions=[], floating_regions=[], accessibility_regions=[], variation_group_id=None, scroll_root_element=None, scroll_root_selector=None, target_selector=None, target_element=None, frame_chain=[], script_hooks={}, visual_grid_options=(), disable_browser_fetching=None, ocr_region=None, layout_breakpoints=None, lazy_load=None), _region=None, _frame=None)</arg>
+<tag>Check Settings keyword</tag>
+<doc>Returns a CheckSettings object specified fully.</doc>
+<status status="PASS" starttime="20220209 16:51:18.598" endtime="20220209 16:51:18.599"/>
+</kw>
+<status status="PASS" starttime="20220209 16:51:18.598" endtime="20220209 16:51:19.041"/>
+</kw>
+<kw name="Eyes Close Async" library="EyesLibrary">
+<tag>Check flow</tag>
+<doc>Closes a session and returns the results of the session.
+If a test is running, aborts it. Otherwise, does nothing.</doc>
+<status status="PASS" starttime="20220209 16:51:19.041" endtime="20220209 16:51:19.042"/>
+</kw>
+<kw name="Teardown" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220209 16:51:19.042" endtime="20220209 16:51:19.112"/>
+</kw>
+<status status="PASS" starttime="20220209 16:51:19.042" endtime="20220209 16:51:19.113"/>
+</kw>
+<status status="PASS" starttime="20220209 16:51:15.797" endtime="20220209 16:51:19.113"/>
+</test>
+<test id="s1-t3" name="Check With Get All Tests Results">
+<kw name="Setup" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220209 16:51:19.115" level="INFO">Opening browser 'Chrome' to base url 'https://applitools.github.io/demo/TestPages/FramesTestPage/'.</msg>
+<status status="PASS" starttime="20220209 16:51:19.114" endtime="20220209 16:51:21.414"/>
+</kw>
+<status status="PASS" starttime="20220209 16:51:19.114" endtime="20220209 16:51:21.414"/>
+</kw>
+<kw name="Eyes Open" library="EyesLibrary">
+<tag>Check flow</tag>
+<doc>Shared parameters section from `applitools.yaml` could be overwritten during `Eyes Open` call, see `Preconditions`.</doc>
+<status status="PASS" starttime="20220209 16:51:21.415" endtime="20220209 16:51:21.901"/>
+</kw>
+<kw name="Eyes Check Window" library="EyesLibrary">
+<tag>Allow to pass Check Settings keywords</tag>
+<tag>Check flow</tag>
+<doc>Check current browser window</doc>
+<status status="PASS" starttime="20220209 16:51:21.901" endtime="20220209 16:51:22.343"/>
+</kw>
+<kw name="Eyes Close Async" library="EyesLibrary">
+<tag>Check flow</tag>
+<doc>Closes a session and returns the results of the session.
+If a test is running, aborts it. Otherwise, does nothing.</doc>
+<status status="PASS" starttime="20220209 16:51:22.344" endtime="20220209 16:51:22.344"/>
+</kw>
+<kw name="Teardown" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220209 16:51:22.345" endtime="20220209 16:51:22.415"/>
+</kw>
+<status status="PASS" starttime="20220209 16:51:22.344" endtime="20220209 16:51:22.416"/>
+</kw>
+<status status="PASS" starttime="20220209 16:51:19.113" endtime="20220209 16:51:22.416"/>
+</test>
+<status status="PASS" starttime="20220209 16:51:11.524" endtime="20220209 16:51:22.417"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Web">Web</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220209 16:51:11.853" level="WARN">No `config` set. Trying to find `applitools.yaml` in current path</msg>
+<msg timestamp="20220209 16:51:22.419" level="WARN">Run `Eyes Get All Test Results` keyword in `Suite Teardown` explicitly to see all output logs</msg>
+</errors>
+</robot>
