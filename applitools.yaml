@@ -1,0 +1,20 @@
+app_name: YOUR_APP_NAME
+web:
+  force_full_page_screenshot: false  #optional
+  wait_before_screenshots: 100  #optional
+
+
+mobile_native:
+  is_simulator: false
+
+
+web_ufg:
+  browsers:
+    desktop:
+      - browser_type: CHROME  # names from BrowserType
+        width: 800
+        height: 600
+    ios:
+      - device_name: iPhone_12_Pro  # names from IosDeviceName
+        screen_orientation: PORTRAIT  # PORTRAIT | LANDSCAPE
+        ios_version: LATEST  # LATEST | ONE_VERSION_BACK
